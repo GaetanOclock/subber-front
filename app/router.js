@@ -7,10 +7,19 @@ import CreateVideoView from './views/CreateVideoView.vue';
 import ProfileView from './views/ProfileView.vue';
 import RegisterView from './views/RegisterView.vue';
 
+import guards from './guards/guards';
+
 const routes = [
     {
+        name: 'home',
         path: '/',
-        component: HomeView
+        component: HomeView,
+        beforeEnter: guards.mustBeAuthenticated
+    },
+    {
+        name: 'login',
+        path: '/login',
+        component: LoginView
     }
 ];
 
