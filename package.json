@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@parcel/transformer-vue": "2.6.2"
+  },
+  "dependencies": {
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.3"
+  }
+}
