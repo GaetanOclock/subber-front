@@ -1,0 +1,30 @@
+html, body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    background-color: $lightBlack;
+    color: $darkWhite;
+}
+
+.round-button {
+    background-color: $darkWhite;
+    color: $lightBlack;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: $round-button-radius;
+    width: $round-button-radius;
+
+    img {
+        width: 50%;
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

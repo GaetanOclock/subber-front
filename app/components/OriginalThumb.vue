@@ -1,9 +1,10 @@
 <template>
-    <div>ORIGINAL THUMB</div>
+    <div>{{ original.name }}</div>
 </template>
 
 <script>
 export default {
+    props: ['original']
     
 }
 </script>

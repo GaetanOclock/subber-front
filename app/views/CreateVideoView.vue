@@ -1,11 +1,12 @@
 <template>
     <div>
-        <!-- Afficher la liste des originales -->
+        <OriginalList></OriginalList>
     </div>
 </template>
 
 <script>
+import OriginalList from '../components/OriginalList.vue';
 export default {
-    
+    components: { OriginalList }
 }
 </script>

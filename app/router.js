@@ -20,7 +20,20 @@ const routes = [
         name: 'login',
         path: '/login',
         component: LoginView
-    }
+    },
+    {
+        name: 'create-video',
+        path: '/video/create',
+        component: CreateVideoView,
+        beforeEnter: guards.mustBeAuthenticated
+    },
+    {
+        name: 'edit-video',
+        path: '/video/:id/edit',
+        component: EditVideoView,
+        beforeEnter: guards.mustBeAuthenticated
+    },
+    
 ];
 
 const router = createRouter({
