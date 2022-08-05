@@ -19,7 +19,7 @@ export default {
     emits: ['inFocus'],
     mounted() {
         this.videoElement.addEventListener('loadedmetadata', () => {
-            this.slots.forEach(this.getSlotThumb);
+            this.slots.forEach(this.makeSlotThumb);
         });
     },
     methods:{
@@ -32,7 +32,7 @@ export default {
         focusIn(sub, slot) {
             this.$emit('inFocus', {sub, slot});
         },
-        async getSlotThumb(slot) {
+        async makeSlotThumb(slot) {
             let video = this.videoElement.cloneNode();
             return new Promise((resolve, reject) => {
     
