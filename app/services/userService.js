@@ -17,7 +17,7 @@ const userService = {
             localStorage.setItem('email', response.data.user.email);
 
             store.commit('updateUserStatus');
-            router.push({name: sessionStorage.getItem('redirectTo')});
+            router.push({name: sessionStorage.getItem('redirectTo') ?? 'home'});
 
         }).catch(err => {
             console.error(err);
