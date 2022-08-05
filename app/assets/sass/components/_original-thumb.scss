@@ -1,0 +1,11 @@
+.original-thumb {
+    background-color: lighten($lightBlack, 10%);
+    padding: $gutter;
+    border-radius: $simple-radius;
+    width: 100%;
+
+    img {
+        border-radius: $simple-radius;
+        width: 100%;
+    }
+}

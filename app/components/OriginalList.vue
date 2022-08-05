@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="originals.length">
         <OriginalThumb 
             @click="onSelectOriginal(original.id)"
             v-for="original in originals"
@@ -31,6 +31,8 @@ export default {
     beforeMount() {
         originalService.getAll().then(response => {
             this.originals = response.data;
+        }).catch(err => {
+            console.log(err);
         });
     },
     components: { OriginalThumb }

@@ -1,0 +1,18 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: $gutter;
+    width: 100%;
+
+    .create-video-button {
+        position: absolute;
+        left: calc(50% - $round-button-radius);
+        top: 8vh;
+        z-index: 100;
+    }
+
+    .logo {
+        width: 40px;
+    }
+}

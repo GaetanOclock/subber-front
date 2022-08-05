@@ -1,7 +1,5 @@
 <template>
   <div>
-    LOGIN FORM
-
     <div class="google-connect">
       <div
         id="g_id_onload"

@@ -1,0 +1,21 @@
+.video-thumb {
+    position: relative;
+    padding: $gutter;
+    width: 100%;
+
+    img {
+        border-radius: $simple-radius;
+        width: 100%;
+    }
+
+    .label {
+        position: absolute;
+        bottom: $gutter;
+        left: $gutter;
+        right: $gutter;
+        background-color: rgba($lightBlack, 0.8);
+        padding: $gutter;
+        font-size: 1.5rem;
+        font-family: "Poppins Black", Arial;
+    }
+}

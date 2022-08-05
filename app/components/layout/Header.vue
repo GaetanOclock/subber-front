@@ -1,8 +1,8 @@
 <template>
-    <header>
-        <div @click="navigateToHome()">Subber</div>
+    <header class="header">
+        <div @click="navigateToHome()"><img class="logo" src="../../assets/images/logo.svg"></div>
         <div><a v-if="isUserAuthenticated" href="javascript:void(0)" @click="callSignOut">Sign out</a></div>
-        <div><RouterLink class="round-button" v-if="showPlusButton" :to="{name: 'create-video'}"><img src="../../assets/icons/plus.svg"></RouterLink></div>
+        <RouterLink class="create-video-button round-button" v-if="showPlusButton" :to="{name: 'create-video'}"><img src="../../assets/icons/plus.svg"></RouterLink>
     </header>
 </template>
 

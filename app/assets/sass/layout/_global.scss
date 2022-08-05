@@ -4,6 +4,10 @@ html, body {
     color: $darkWhite;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .round-button {
     background-color: $darkWhite;
     color: $lightBlack;

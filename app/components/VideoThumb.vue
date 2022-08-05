@@ -1,6 +1,7 @@
 <template>
-    <div>
-        <h2>{{ video.name }}</h2>
+    <div class="video-thumb" v-if="video.Original">
+        <img :src="'/thumbs/' + video.Original.thumb">
+        <div class="label">{{ video.name }}</div>
     </div>
 </template>
 

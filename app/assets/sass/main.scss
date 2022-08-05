@@ -1,5 +1,11 @@
+@import 'reset-css/sass/reset';
+
 @import './abstract/fonts';
 @import './abstract/colors';
 @import './abstract/variables';
 
 @import './layout/global';
+@import './layout/header';
+
+@import './components/original-thumb';
+@import './components/video-thumb';

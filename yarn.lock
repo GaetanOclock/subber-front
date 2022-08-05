@@ -728,6 +728,11 @@
   dependencies:
     "picomatch" "^2.2.1"
 
+"reset-css@^5.0.1":
+  "integrity" "sha512-VyuJdNFfp5x/W6e5wauJM59C02Vs0P22sxzZGhQMPaqu/NGTeFxlBFOOw3eq9vQd19gIDdZp7zi89ylyKOJ33Q=="
+  "resolved" "https://registry.npmjs.org/reset-css/-/reset-css-5.0.1.tgz"
+  "version" "5.0.1"
+
 "safe-buffer@^5.0.1":
   "integrity" "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ=="
   "resolved" "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz"
