@@ -1,9 +1,11 @@
 <template>
-    <div>VIDEO THUMB</div>
+    <div>
+        <h2>{{ video.name }}</h2>
+    </div>
 </template>
 
 <script>
 export default {
-    
+    props: ['video']
 }
 </script>
